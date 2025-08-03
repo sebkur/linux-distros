@@ -56,13 +56,13 @@ def generate_toc(distros):
         grouped.setdefault(base, []).append(distro)
 
     lines = ["## Table of Contents", ""]
-    for base in sorted(grouped.keys()):
+    for base in sorted(grouped.keys(), key=lambda b: b.lower()):
         base_slug = base.lower().replace(" ", "-")
         if base == "Independent":
             lines.append(f"- [{base}](#{base_slug})")
         else:
             lines.append(f"- [{base}](#based-on-{base_slug})")
-        for distro in sorted(grouped[base], key=lambda d: d["name"]):
+        for distro in sorted(grouped[base], key=lambda d: d["name"].lower()):
             distro_slug = distro["name"].lower().replace(" ", "-")
             lines.append(f"  - [{distro['name']}](#{distro_slug})")
     lines.append("")
@@ -76,13 +76,13 @@ def generate_readme(distros):
         grouped.setdefault(base, []).append(distro)
 
     lines = []
-    for base, children in grouped.items():
+    for base, children in sorted(grouped.items(), key=lambda item: item[0].lower()):
         if base == "Independent":
             lines.append(f"## {base}")
         else:
             lines.append(f"## Based on: {base}")
         lines.append("")
-        for distro in sorted(children, key=lambda d: d["name"]):
+        for distro in sorted(children, key=lambda d: d["name"].lower()):
             name = distro["name"]
             has_base = distro.get("base") is not None
             slug = name.lower().replace(" ", "-")
