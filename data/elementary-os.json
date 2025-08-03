@@ -1,0 +1,84 @@
+{
+  "name": "elementary OS",
+  "homepage": "https://elementary.io",
+  "base": "Ubuntu",
+  "versions": [
+    {
+      "version": "0.1",
+      "codename": "Jupiter",
+      "year": 2011,
+      "based_on": "Ubuntu 10.10",
+      "supported": false
+    },
+    {
+      "version": "0.2",
+      "codename": "Luna",
+      "year": 2013,
+      "based_on": "Ubuntu 12.04",
+      "supported": false
+    },
+    {
+      "version": "0.3",
+      "codename": "Freya",
+      "year": 2015,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "0.4",
+      "codename": "Loki",
+      "year": 2016,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "5.0",
+      "codename": "Juno",
+      "year": 2018,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "5.1",
+      "codename": "Hera",
+      "year": 2019,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "6.0",
+      "codename": "Odin",
+      "year": 2021,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "6.1",
+      "codename": "J\u00f3lnir",
+      "year": 2021,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "7.0",
+      "codename": "Horus",
+      "year": 2023,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "7.1",
+      "codename": "Horus",
+      "year": 2023,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "8.0",
+      "codename": "Circe",
+      "year": 2024,
+      "based_on": "Ubuntu 24.04",
+      "supported": true
+    }
+  ]
+}
