@@ -38,8 +38,8 @@ distros and the versions the are based on.
 | 8       | Jessie   | 2015 | no        |
 | 9       | Stretch  | 2017 | no        |
 | 10      | Buster   | 2019 | no        |
-| 11      | Bullseye | 2021 | no        |
-| 12      | Bookworm | 2023 | no        |
+| 11      | Bullseye | 2021 | yes       |
+| 12      | Bookworm | 2023 | yes       |
 
 ### Ubuntu
 * Website: [https://ubuntu.com](https://ubuntu.com)
