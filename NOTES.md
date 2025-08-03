@@ -35,7 +35,7 @@ Here's a comprehensive list: https://askubuntu.com/questions/445487/what-debian-
 The project libosinfo has GPL-licensed data here: https://gitlab.com/libosinfo/osinfo-db/-/blob/main
 
 Specifically, https://gitlab.com/libosinfo/osinfo-db/-/tree/main/data/os has
-one directory per OS with files per version, i.e. here is
+one directory per OS with files per version, e.g. here is
 [a file for Trisquel 11](https://gitlab.com/libosinfo/osinfo-db/-/blob/main/data/os/trisquel.info/trisquel-11.xml.in)
 that has some information about the fact that it derives from Ubuntu 22.04:
 
