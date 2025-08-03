@@ -73,3 +73,10 @@ Ubunutu and Linux Mint have a file called `/etc/os-release`
     PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
     UBUNTU_CODENAME=noble
     LOGO=ubuntu-logo
+
+## inxi
+
+The tool `inxi` can be used to display all kinds of useful info about the current
+system. In particular `inxi -r` can probably be used to derive some information
+about the current OS's relation to Debian / Ubuntu as it reveals e.g. which
+Ubuntu version repository is used on Linux Mint.
