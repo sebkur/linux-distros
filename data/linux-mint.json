@@ -1,0 +1,294 @@
+{
+  "name": "Linux Mint",
+  "homepage": "https://linuxmint.com",
+  "base": "Ubuntu",
+  "versions": [
+    {
+      "version": "1.0",
+      "codename": "Ada",
+      "year": 2006,
+      "based_on": "Ubuntu 6.06",
+      "supported": false
+    },
+    {
+      "version": "2.0",
+      "codename": "Barbara",
+      "year": 2006,
+      "based_on": "Ubuntu 6.10",
+      "supported": false
+    },
+    {
+      "version": "2.1",
+      "codename": "Bea",
+      "year": 2006,
+      "based_on": "Ubuntu 6.10",
+      "supported": false
+    },
+    {
+      "version": "2.2",
+      "codename": "Bianca",
+      "year": 2007,
+      "based_on": "Ubuntu 6.10",
+      "supported": false
+    },
+    {
+      "version": "3.0",
+      "codename": "Cassandra",
+      "year": 2007,
+      "based_on": "Ubuntu 7.04",
+      "supported": false
+    },
+    {
+      "version": "3.1",
+      "codename": "Celena",
+      "year": 2007,
+      "based_on": "Ubuntu 7.04",
+      "supported": false
+    },
+    {
+      "version": "4.0",
+      "codename": "Daryna",
+      "year": 2007,
+      "based_on": "Ubuntu 7.10",
+      "supported": false
+    },
+    {
+      "version": "5",
+      "codename": "Elyssa",
+      "year": 2008,
+      "based_on": "Ubuntu 8.04",
+      "supported": false
+    },
+    {
+      "version": "6",
+      "codename": "Felicia",
+      "year": 2008,
+      "based_on": "Ubuntu 8.10",
+      "supported": false
+    },
+    {
+      "version": "7",
+      "codename": "Gloria",
+      "year": 2009,
+      "based_on": "Ubuntu 9.04",
+      "supported": false
+    },
+    {
+      "version": "8",
+      "codename": "Helena",
+      "year": 2009,
+      "based_on": "Ubuntu 9.10",
+      "supported": false
+    },
+    {
+      "version": "9",
+      "codename": "Isadora",
+      "year": 2010,
+      "based_on": "Ubuntu 10.04",
+      "supported": false
+    },
+    {
+      "version": "10",
+      "codename": "Julia",
+      "year": 2010,
+      "based_on": "Ubuntu 10.10",
+      "supported": false
+    },
+    {
+      "version": "11",
+      "codename": "Katya",
+      "year": 2011,
+      "based_on": "Ubuntu 11.04",
+      "supported": false
+    },
+    {
+      "version": "12",
+      "codename": "Lisa",
+      "year": 2011,
+      "based_on": "Ubuntu 11.10",
+      "supported": false
+    },
+    {
+      "version": "13",
+      "codename": "Maya",
+      "year": 2012,
+      "based_on": "Ubuntu 12.04",
+      "supported": false
+    },
+    {
+      "version": "14",
+      "codename": "Nadia",
+      "year": 2012,
+      "based_on": "Ubuntu 12.10",
+      "supported": false
+    },
+    {
+      "version": "15",
+      "codename": "Olivia",
+      "year": 2013,
+      "based_on": "Ubuntu 13.04",
+      "supported": false
+    },
+    {
+      "version": "16",
+      "codename": "Petra",
+      "year": 2013,
+      "based_on": "Ubuntu 13.10",
+      "supported": false
+    },
+    {
+      "version": "17",
+      "codename": "Qiana",
+      "year": 2014,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "17.1",
+      "codename": "Rebecca",
+      "year": 2014,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "17.2",
+      "codename": "Rafaela",
+      "year": 2015,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "17.3",
+      "codename": "Rosa",
+      "year": 2015,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "18",
+      "codename": "Sarah",
+      "year": 2016,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "18.1",
+      "codename": "Serena",
+      "year": 2016,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "18.2",
+      "codename": "Sonya",
+      "year": 2017,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "18.3",
+      "codename": "Sylvia",
+      "year": 2017,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "19",
+      "codename": "Tara",
+      "year": 2018,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "19.1",
+      "codename": "Tessa",
+      "year": 2018,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "19.2",
+      "codename": "Tina",
+      "year": 2019,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "19.3",
+      "codename": "Tricia",
+      "year": 2019,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "20",
+      "codename": "Ulyana",
+      "year": 2020,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "20.1",
+      "codename": "Ulyssa",
+      "year": 2020,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "20.2",
+      "codename": "Uma",
+      "year": 2021,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "20.3",
+      "codename": "Una",
+      "year": 2021,
+      "based_on": "Ubuntu 20.04",
+      "supported": false
+    },
+    {
+      "version": "21",
+      "codename": "Vanessa",
+      "year": 2022,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "21.1",
+      "codename": "Vera",
+      "year": 2022,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "21.2",
+      "codename": "Victoria",
+      "year": 2023,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "21.3",
+      "codename": "Virginia",
+      "year": 2024,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    },
+    {
+      "version": "22",
+      "codename": "Wilma",
+      "year": 2024,
+      "based_on": "Ubuntu 24.04",
+      "supported": true
+    },
+    {
+      "version": "22.1",
+      "codename": "Xia",
+      "year": 2025,
+      "based_on": "Ubuntu 24.04",
+      "supported": true
+    }
+  ]
+}

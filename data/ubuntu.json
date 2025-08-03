@@ -1,0 +1,259 @@
+{
+  "name": "Ubuntu",
+  "homepage": "https://ubuntu.com",
+  "base": null,
+  "versions": [
+    {
+      "version": "4.10",
+      "codename": "Warty Warthog",
+      "year": 2004,
+      "supported": false
+    },
+    {
+      "version": "5.04",
+      "codename": "Hoary Hedgehog",
+      "year": 2005,
+      "supported": false
+    },
+    {
+      "version": "5.10",
+      "codename": "Breezy Badger",
+      "year": 2005,
+      "supported": false
+    },
+    {
+      "version": "6.06",
+      "codename": "Dapper Drake",
+      "year": 2006,
+      "supported": false
+    },
+    {
+      "version": "6.10",
+      "codename": "Edgy Eft",
+      "year": 2006,
+      "supported": false
+    },
+    {
+      "version": "7.04",
+      "codename": "Feisty Fawn",
+      "year": 2007,
+      "supported": false
+    },
+    {
+      "version": "7.10",
+      "codename": "Gutsy Gibbon",
+      "year": 2007,
+      "supported": false
+    },
+    {
+      "version": "8.04",
+      "codename": "Hardy Heron",
+      "year": 2008,
+      "supported": false
+    },
+    {
+      "version": "8.10",
+      "codename": "Intrepid Ibex",
+      "year": 2008,
+      "supported": false
+    },
+    {
+      "version": "9.04",
+      "codename": "Jaunty Jackalope",
+      "year": 2009,
+      "supported": false
+    },
+    {
+      "version": "9.10",
+      "codename": "Karmic Koala",
+      "year": 2009,
+      "supported": false
+    },
+    {
+      "version": "10.04",
+      "codename": "Lucid Lynx",
+      "year": 2010,
+      "supported": false
+    },
+    {
+      "version": "10.10",
+      "codename": "Maverick Meerkat",
+      "year": 2010,
+      "supported": false
+    },
+    {
+      "version": "11.04",
+      "codename": "Natty Narwhal",
+      "year": 2011,
+      "supported": false
+    },
+    {
+      "version": "11.10",
+      "codename": "Oneiric Ocelot",
+      "year": 2011,
+      "supported": false
+    },
+    {
+      "version": "12.04",
+      "codename": "Precise Pangolin",
+      "year": 2012,
+      "supported": false
+    },
+    {
+      "version": "12.10",
+      "codename": "Quantal Quetzal",
+      "year": 2012,
+      "supported": false
+    },
+    {
+      "version": "13.04",
+      "codename": "Raring Ringtail",
+      "year": 2013,
+      "supported": false
+    },
+    {
+      "version": "13.10",
+      "codename": "Saucy Salamander",
+      "year": 2013,
+      "supported": false
+    },
+    {
+      "version": "14.04",
+      "codename": "Trusty Tahr",
+      "year": 2014,
+      "supported": false
+    },
+    {
+      "version": "14.10",
+      "codename": "Utopic Unicorn",
+      "year": 2014,
+      "supported": false
+    },
+    {
+      "version": "15.04",
+      "codename": "Vivid Vervet",
+      "year": 2015,
+      "supported": false
+    },
+    {
+      "version": "15.10",
+      "codename": "Wily Werewolf",
+      "year": 2015,
+      "supported": false
+    },
+    {
+      "version": "16.04",
+      "codename": "Xenial Xerus",
+      "year": 2016,
+      "supported": false
+    },
+    {
+      "version": "16.10",
+      "codename": "Yakkety Yak",
+      "year": 2016,
+      "supported": false
+    },
+    {
+      "version": "17.04",
+      "codename": "Zesty Zapus",
+      "year": 2017,
+      "supported": false
+    },
+    {
+      "version": "17.10",
+      "codename": "Artful Aardvark",
+      "year": 2017,
+      "supported": false
+    },
+    {
+      "version": "18.04",
+      "codename": "Bionic Beaver",
+      "year": 2018,
+      "supported": false
+    },
+    {
+      "version": "18.10",
+      "codename": "Cosmic Cuttlefish",
+      "year": 2018,
+      "supported": false
+    },
+    {
+      "version": "19.04",
+      "codename": "Disco Dingo",
+      "year": 2019,
+      "supported": false
+    },
+    {
+      "version": "19.10",
+      "codename": "Eoan Ermine",
+      "year": 2019,
+      "supported": false
+    },
+    {
+      "version": "20.04",
+      "codename": "Focal Fossa",
+      "year": 2020,
+      "supported": false
+    },
+    {
+      "version": "20.10",
+      "codename": "Groovy Gorilla",
+      "year": 2020,
+      "supported": false
+    },
+    {
+      "version": "21.04",
+      "codename": "Hirsute Hippo",
+      "year": 2021,
+      "supported": false
+    },
+    {
+      "version": "21.10",
+      "codename": "Impish Indri",
+      "year": 2021,
+      "supported": false
+    },
+    {
+      "version": "22.04",
+      "codename": "Jammy Jellyfish",
+      "year": 2022,
+      "supported": true
+    },
+    {
+      "version": "22.10",
+      "codename": "Kinetic Kudu",
+      "year": 2022,
+      "supported": false
+    },
+    {
+      "version": "23.04",
+      "codename": "Lunar Lobster",
+      "year": 2023,
+      "supported": false
+    },
+    {
+      "version": "23.10",
+      "codename": "Mantic Minotaur",
+      "year": 2023,
+      "supported": false
+    },
+    {
+      "version": "24.04",
+      "codename": "Noble Numbat",
+      "year": 2024,
+      "supported": true
+    },
+    {
+      "version": "24.10",
+      "codename": "Oracular Oriole",
+      "year": 2024,
+      "supported": true
+    },
+    {
+      "version": "25.04",
+      "codename": "Plucky Puffin",
+      "year": 2025,
+      "supported": true
+    }
+  ]
+}
