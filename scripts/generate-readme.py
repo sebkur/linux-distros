@@ -11,8 +11,11 @@ def load_distro_data(data_path):
                 distros.append(json.load(f))
     return distros
 
-def generate_table(versions):
-    headers = ["Version", "Codename", "Year", "Based On", "Supported"]
+def generate_table(versions, include_based_on=True):
+    headers = ["Version", "Codename", "Year"]
+    if include_based_on:
+        headers.append("Based On")
+    headers.append("Supported")
     rows = []
 
     # Build data rows
@@ -21,9 +24,10 @@ def generate_table(versions):
             str(v.get("version", "")),
             str(v.get("codename", "")),
             str(v.get("year", "")),
-            str(v.get("based_on", "")),
-            "yes" if v.get("supported", False) else "no"
         ]
+        if include_based_on:
+            row.append(str(v.get("based_on", "")))
+        row.append("yes" if v.get("supported", False) else "no")
         rows.append(row)
 
     # Calculate column widths
@@ -67,7 +71,8 @@ def generate_readme(distros):
                 lines.append(f"* Website: [{homepage}]({homepage})")
             lines.append(f"* Standalone file: [distros/{slug}.md](distros/{slug}.md)")
             lines.append("")
-            lines.append(generate_table(versions))
+            include_based_on = distro.get("base") is not None
+            lines.append(generate_table(versions, include_based_on))
             lines.append("")
     return "\n".join(lines)
 
@@ -84,7 +89,8 @@ def generate_per_distro_pages(distros, output_dir):
             lines.append(f"[{homepage}]({homepage})")
             lines.append("")
 
-        lines.append(generate_table(versions))
+        include_based_on = distro.get("base") is not None
+        lines.append(generate_table(versions, include_based_on))
         lines.append("")
 
         with open(os.path.join(output_dir, f"{slug}.md"), "w") as f:
