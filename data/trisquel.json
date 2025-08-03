@@ -1,0 +1,106 @@
+{
+  "name": "Trisquel",
+  "homepage": "https://trisquel.info",
+  "base": "Ubuntu",
+  "versions": [
+    {
+      "version": "1.0",
+      "codename": "Arianrhod",
+      "year": 2007,
+      "based_on": "Ubuntu 5.10",
+      "supported": false
+    },
+    {
+      "version": "2.0",
+      "codename": "Robur",
+      "year": 2008,
+      "based_on": "Ubuntu 8.04",
+      "supported": false
+    },
+    {
+      "version": "3.0",
+      "codename": "Dwyn",
+      "year": 2009,
+      "based_on": "Ubuntu 9.04",
+      "supported": false
+    },
+    {
+      "version": "3.5",
+      "codename": "Awen",
+      "year": 2010,
+      "based_on": "Ubuntu 9.10",
+      "supported": false
+    },
+    {
+      "version": "4.0",
+      "codename": "Taranis",
+      "year": 2010,
+      "based_on": "Ubuntu 10.04",
+      "supported": false
+    },
+    {
+      "version": "4.5",
+      "codename": "Slaine",
+      "year": 2011,
+      "based_on": "Ubuntu 10.10",
+      "supported": false
+    },
+    {
+      "version": "5.0",
+      "codename": "Dagda",
+      "year": 2011,
+      "based_on": "Ubuntu 11.04",
+      "supported": false
+    },
+    {
+      "version": "5.5",
+      "codename": "Brigantia",
+      "year": 2012,
+      "based_on": "Ubuntu 11.10",
+      "supported": false
+    },
+    {
+      "version": "6.0",
+      "codename": "Toutatis",
+      "year": 2013,
+      "based_on": "Ubuntu 12.04",
+      "supported": false
+    },
+    {
+      "version": "7.0",
+      "codename": "Belenos",
+      "year": 2014,
+      "based_on": "Ubuntu 14.04",
+      "supported": false
+    },
+    {
+      "version": "8.0",
+      "codename": "Flidas",
+      "year": 2018,
+      "based_on": "Ubuntu 16.04",
+      "supported": false
+    },
+    {
+      "version": "9.0",
+      "codename": "Etiona",
+      "year": 2020,
+      "based_on": "Ubuntu 18.04",
+      "supported": false
+    },
+    {
+      "version": "10.0",
+      "codename": "Nabia",
+      "year": 2022,
+      "based_on": "Ubuntu 20.04",
+      "supported": true
+    },
+    {
+      "version": "11.0",
+      "codename": "Aramo",
+      "year": 2023,
+      "based_on": "Ubuntu 22.04",
+      "supported": true
+    }
+  ]
+}
+
