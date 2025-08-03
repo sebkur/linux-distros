@@ -30,6 +30,22 @@ It can also be examined in different versions using docker:
 
 Here's a comprehensive list: https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
 
+## Linux Mint
+
+Linux Mint has a file `/etc/linuxmint/info` that has some info about the OS:
+
+    $ cat /etc/linuxmint/info
+    RELEASE=20.3
+    CODENAME=una
+    EDITION="Xfce"
+    DESCRIPTION="Linux Mint 20.3 Una"
+    DESKTOP=Gnome
+    TOOLKIT=GTK
+    NEW_FEATURES_URL=https://www.linuxmint.com/rel_una_xfce_whatsnew.php
+    RELEASE_NOTES_URL=https://www.linuxmint.com/rel_una_xfce.php
+    USER_GUIDE_URL=https://www.linuxmint.com/documentation.php
+    GRUB_TITLE=Linux Mint 20.3 Xfce
+
 ## libosinfo
 
 The project libosinfo has GPL-licensed data here: https://gitlab.com/libosinfo/osinfo-db/-/blob/main
