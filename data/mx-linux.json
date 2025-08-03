@@ -1,0 +1,64 @@
+{
+  "name": "MX Linux",
+  "homepage": "https://mxlinux.org",
+  "base": "Debian",
+  "versions": [
+    {
+      "version": "14",
+      "codename": "Symbiosis",
+      "year": 2014,
+      "based_on": "Debian 7",
+      "supported": false
+    },
+    {
+      "version": "15",
+      "codename": "Fusion",
+      "year": 2015,
+      "based_on": "Debian 8",
+      "supported": false
+    },
+    {
+      "version": "16",
+      "codename": "Metamorphosis",
+      "year": 2016,
+      "based_on": "Debian 8",
+      "supported": false
+    },
+    {
+      "version": "17",
+      "codename": "Horizon",
+      "year": 2017,
+      "based_on": "Debian 9",
+      "supported": false
+    },
+    {
+      "version": "18",
+      "codename": "Continuum",
+      "year": 2018,
+      "based_on": "Debian 9",
+      "supported": false
+    },
+    {
+      "version": "19",
+      "codename": "Patito Feo",
+      "year": 2019,
+      "based_on": "Debian 10",
+      "supported": false
+    },
+    {
+      "version": "21",
+      "codename": "Wildflower",
+      "year": 2021,
+      "based_on": "Debian 11",
+      "supported": true
+    },
+    {
+      "version": "23",
+      "codename": "Libretto",
+      "year": 2023,
+      "based_on": "Debian 12",
+      "supported": true
+    }
+  ]
+}
+
