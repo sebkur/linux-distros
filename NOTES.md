@@ -103,3 +103,18 @@ There's also https://endoflife.date/ which tracks some of the Linux distros.
 It offers an [API](https://endoflife.date/docs/api/v1/), is
 [Open Source](https://github.com/endoflife-date/endoflife.date) with
 a permissive license (MIT).
+
+## Installable packages
+
+Within a distro, the `rmadison` tool can be used to find out which versions of
+a package are available on each version of the OS, e.g.
+
+    rmadison curl
+
+Should list the available versions of curl for different versions of your OS.
+
+Apparently it uses APIs provided by Debian / Ubuntu that can also be queried
+directly, e.g.:
+
+    curl https://api.ftp-master.debian.org/madison?package=curl
+    curl https://people.canonical.com/~ubuntu-archive/madison.cgi?package=curl
