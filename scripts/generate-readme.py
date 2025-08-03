@@ -56,7 +56,7 @@ def generate_readme(distros):
         base = distro.get("base") or "Independent"
         grouped.setdefault(base, []).append(distro)
 
-    lines = ["# Linux Distro Base Map", ""]
+    lines = []
     for base, children in grouped.items():
         lines.append(f"## Based on: {base}")
         lines.append("")
@@ -102,10 +102,15 @@ if __name__ == "__main__":
     data_path = os.path.join(root_dir, "data")
     distros_path = os.path.join(root_dir, "distros")
     readme_path = os.path.join(root_dir, "README.md")
+    preface_path = os.path.join(root_dir, "PREFACE.md")
 
     distros = load_distro_data(data_path)
 
-    readme_content = generate_readme(distros)
+    preface = ""
+    with open(preface_path, "r") as f:
+        preface = f.read().strip() + "\n\n"
+
+    readme_content = preface  + generate_readme(distros)
     with open(readme_path, "w") as f:
         f.write(readme_content)
 
