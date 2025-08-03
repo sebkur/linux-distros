@@ -56,7 +56,7 @@ def generate_toc(distros):
         grouped.setdefault(base, []).append(distro)
 
     lines = ["## Table of Contents", ""]
-    for base in sorted(grouped.keys(), key=lambda b: b.lower()):
+    for base in sorted(grouped.keys(), key=lambda b: (b != "Independent", b.lower())):
         base_slug = base.lower().replace(" ", "-")
         if base == "Independent":
             lines.append(f"- [{base}](#{base_slug})")
@@ -76,7 +76,7 @@ def generate_readme(distros):
         grouped.setdefault(base, []).append(distro)
 
     lines = []
-    for base, children in sorted(grouped.items(), key=lambda item: item[0].lower()):
+    for base, children in sorted(grouped.items(), key=lambda item: (item[0] != "Independent", item[0].lower())):
         if base == "Independent":
             lines.append(f"## {base}")
         else:
