@@ -8,7 +8,7 @@ The data is available as JSON data files in the `data` directory.
 A script is used to generate the human-readable form as seen below.
 
 If you want to contribute update data or add support for a distro not
-yet listed here, please read [CONTRIBUTE.md](CONTRIBUTE.md).
+yet listed here, please read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Table of Contents
 
