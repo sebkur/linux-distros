@@ -3,7 +3,15 @@
 This project is an attempt to build a database of Debian/Ubuntu based
 distros and the versions the are based on.
 
-## Based on: Independent
+## Table of Contents
+
+- [Independent](#independent)
+  - [Debian](#debian)
+  - [Ubuntu](#ubuntu)
+- [Ubuntu](#based-on-ubuntu)
+  - [Linux Mint](#linux-mint)
+
+## Independent
 
 ### Debian
 * Website: [https://www.debian.org](https://www.debian.org)

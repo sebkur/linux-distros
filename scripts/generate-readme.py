@@ -49,19 +49,42 @@ def generate_table(versions, include_based_on=True):
 
     return "\n".join(lines)
 
-
-def generate_readme(distros):
+def generate_toc(distros):
     grouped = {}
     for distro in distros:
         base = distro.get("base") or "Independent"
         grouped.setdefault(base, []).append(distro)
 
+    lines = ["## Table of Contents", ""]
+    for base in sorted(grouped.keys()):
+        base_slug = base.lower().replace(" ", "-")
+        if base == "Independent":
+            lines.append(f"- [{base}](#{base_slug})")
+        else:
+            lines.append(f"- [{base}](#based-on-{base_slug})")
+        for distro in sorted(grouped[base], key=lambda d: d["name"]):
+            distro_slug = distro["name"].lower().replace(" ", "-")
+            lines.append(f"  - [{distro['name']}](#{distro_slug})")
+    lines.append("")
+    return "\n".join(lines)
+
+def generate_readme(distros):
+    grouped = {}
+    for distro in distros:
+        has_base = distro.get("base") is not None
+        base = distro.get("base") or "Independent"
+        grouped.setdefault(base, []).append(distro)
+
     lines = []
     for base, children in grouped.items():
-        lines.append(f"## Based on: {base}")
+        if base == "Independent":
+            lines.append(f"## {base}")
+        else:
+            lines.append(f"## Based on: {base}")
         lines.append("")
         for distro in sorted(children, key=lambda d: d["name"]):
             name = distro["name"]
+            has_base = distro.get("base") is not None
             slug = name.lower().replace(" ", "-")
             homepage = distro.get("homepage", "")
             versions = distro.get("versions", [])
@@ -71,8 +94,7 @@ def generate_readme(distros):
                 lines.append(f"* Website: [{homepage}]({homepage})")
             lines.append(f"* Standalone file: [distros/{slug}.md](distros/{slug}.md)")
             lines.append("")
-            include_based_on = distro.get("base") is not None
-            lines.append(generate_table(versions, include_based_on))
+            lines.append(generate_table(versions, has_base))
             lines.append("")
     return "\n".join(lines)
 
@@ -89,8 +111,8 @@ def generate_per_distro_pages(distros, output_dir):
             lines.append(f"[{homepage}]({homepage})")
             lines.append("")
 
-        include_based_on = distro.get("base") is not None
-        lines.append(generate_table(versions, include_based_on))
+        has_base = distro.get("base") is not None
+        lines.append(generate_table(versions, has_base))
         lines.append("")
 
         with open(os.path.join(output_dir, f"{slug}.md"), "w") as f:
@@ -109,8 +131,9 @@ if __name__ == "__main__":
     preface = ""
     with open(preface_path, "r") as f:
         preface = f.read().strip() + "\n\n"
+    toc = generate_toc(distros) + "\n"
 
-    readme_content = preface  + generate_readme(distros)
+    readme_content = preface + toc + generate_readme(distros)
     with open(readme_path, "w") as f:
         f.write(readme_content)
 
