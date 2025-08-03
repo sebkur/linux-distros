@@ -3,7 +3,8 @@
 ## Based on: Independent
 
 ### Debian
-[https://www.debian.org](https://www.debian.org)
+* Website: [https://www.debian.org](https://www.debian.org)
+* Standalone file: [distros/debian.md](distros/debian.md)
 
 | Version | Codename | Year | Based On | Supported |
 |---------|----------|------|----------|-----------|
@@ -26,7 +27,8 @@
 | 12      | Bookworm | 2023 |          | no        |
 
 ### Ubuntu
-[https://ubuntu.com](https://ubuntu.com)
+* Website: [https://ubuntu.com](https://ubuntu.com)
+* Standalone file: [distros/ubuntu.md](distros/ubuntu.md)
 
 | Version | Codename          | Year | Based On | Supported |
 |---------|-------------------|------|----------|-----------|
@@ -76,7 +78,8 @@
 ## Based on: Ubuntu
 
 ### Linux Mint
-[https://linuxmint.com](https://linuxmint.com)
+* Website: [https://linuxmint.com](https://linuxmint.com)
+* Standalone file: [distros/linux-mint.md](distros/linux-mint.md)
 
 | Version | Codename  | Year | Based On     | Supported |
 |---------|-----------|------|--------------|-----------|

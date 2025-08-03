@@ -57,20 +57,50 @@ def generate_readme(distros):
         lines.append(f"## Based on: {base}")
         lines.append("")
         for distro in sorted(children, key=lambda d: d["name"]):
-            lines.append(f"### {distro['name']}")
-            lines.append(f"[{distro['homepage']}]({distro['homepage']})")
+            name = distro["name"]
+            slug = name.lower().replace(" ", "-")
+            homepage = distro.get("homepage", "")
+            versions = distro.get("versions", [])
+
+            lines.append(f"### {name}")
+            if homepage:
+                lines.append(f"* Website: [{homepage}]({homepage})")
+            lines.append(f"* Standalone file: [distros/{slug}.md](distros/{slug}.md)")
             lines.append("")
-            lines.append(generate_table(distro.get("versions", [])))
+            lines.append(generate_table(versions))
             lines.append("")
     return "\n".join(lines)
 
+def generate_per_distro_pages(distros, output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    for distro in distros:
+        name = distro["name"]
+        slug = name.lower().replace(" ", "-")
+        homepage = distro.get("homepage", "")
+        versions = distro.get("versions", [])
+
+        lines = [f"# {name}", ""]
+        if homepage:
+            lines.append(f"[{homepage}]({homepage})")
+            lines.append("")
+
+        lines.append(generate_table(versions))
+        lines.append("")
+
+        with open(os.path.join(output_dir, f"{slug}.md"), "w") as f:
+            f.write("\n".join(lines))
+
 if __name__ == "__main__":
     script_dir = os.path.dirname(__file__)
-    data_path = os.path.join(script_dir, "..", "data")
-    readme_path = os.path.join(script_dir, "..", "README.md")
+    root_dir = os.path.join(script_dir, "..")
+    data_path = os.path.join(root_dir, "data")
+    distros_path = os.path.join(root_dir, "distros")
+    readme_path = os.path.join(root_dir, "README.md")
 
     distros = load_distro_data(data_path)
-    readme_content = generate_readme(distros)
 
+    readme_content = generate_readme(distros)
     with open(readme_path, "w") as f:
         f.write(readme_content)
+
+    generate_per_distro_pages(distros, distros_path)
