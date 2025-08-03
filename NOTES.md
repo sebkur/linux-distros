@@ -96,3 +96,10 @@ The tool `inxi` can be used to display all kinds of useful info about the curren
 system. In particular `inxi -r` can probably be used to derive some information
 about the current OS's relation to Debian / Ubuntu as it reveals e.g. which
 Ubuntu version repository is used on Linux Mint.
+
+## endoflife.date
+
+There's also https://endoflife.date/ which tracks some of the Linux distros.
+It offers an [API](https://endoflife.date/docs/api/v1/), is
+[Open Source](https://github.com/endoflife-date/endoflife.date) with
+a permissive license (MIT).
